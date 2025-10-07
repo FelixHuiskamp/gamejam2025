@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3003718413232557514
+--- !u!1001 &7254150990720151526
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5144723752307920847, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.34
+      value: 24.07785
       objectReference: {fileID: 0}
     - target: {fileID: 5144723752307920847, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49
+      value: 1.339
       objectReference: {fileID: 0}
     - target: {fileID: 5144723752307920847, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30.35406
+      value: -18.873716
       objectReference: {fileID: 0}
     - target: {fileID: 5144723752307920847, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8b89fe4c54df9644daadde196ab2cdeb, type: 2}
     - target: {fileID: 8066007605226979242, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
       propertyPath: m_Name
-      value: NamGyu Variant
+      value: NamGyu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066007605226979242, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62,20 +66,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8066007605226979242, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5924920911020717933}
+      addedObject: {fileID: 8852523378657789599}
+    - targetCorrespondingSourceObject: {fileID: 8066007605226979242, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2517174045830479656}
+    - targetCorrespondingSourceObject: {fileID: 8066007605226979242, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7936871269129127163}
   m_SourcePrefab: {fileID: 100100000, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
---- !u!1 &5070893570628645472 stripped
+--- !u!1 &818490518073446476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8066007605226979242, guid: 253587dee7ab67b4384bb38c76eb2eeb, type: 3}
-  m_PrefabInstance: {fileID: 3003718413232557514}
+  m_PrefabInstance: {fileID: 7254150990720151526}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &5924920911020717933
+--- !u!82 &8852523378657789599
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5070893570628645472}
+  m_GameObject: {fileID: 818490518073446476}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -166,3 +176,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2517174045830479656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818490518073446476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f6f10a07705754499dfa08360554c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  waitTime: 2
+--- !u!114 &7936871269129127163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818490518073446476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178459d978f041c459ea126de3f7ddfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
