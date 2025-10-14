@@ -3,7 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
+    public GameObject mainMenuPanel;
+    public GameObject settingsPanel;
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -11,7 +13,6 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
     }
 
-    
     public void QuitGame()
     {
         Debug.Log("Quit!");
@@ -25,4 +26,16 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void OpenSettings()
+    {
+        mainMenuPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settingsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
 }
+
