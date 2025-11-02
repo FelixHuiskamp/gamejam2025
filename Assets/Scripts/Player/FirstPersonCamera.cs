@@ -14,11 +14,7 @@ public class FirstPersonCamera : MonoBehaviour
 
     void Start()
     {
-        if (lockCursor)
-        {
-            Cursor.lockState = CursorLockMode.Locked; 
-            Cursor.visible = false;
-        }
+
     }
 
    
