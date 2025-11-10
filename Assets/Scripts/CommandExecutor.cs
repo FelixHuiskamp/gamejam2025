@@ -183,4 +183,11 @@ public class CommandExecutor : MonoBehaviour
     {
         ExecuteCommand("Player Heal 50");
     }
+
+    [ContextMenu("Test Command: PlayerJump Jump")]
+    public void TestPlayerJump()
+    {
+        ExecuteCommand("PlayerJump Jump");
+    }
+
 }

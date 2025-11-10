@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBody: {fileID: 2003049964}
   mouseSensitivity: 100
-  lockCursor: 1
+  lockCursor: 0
 --- !u!1 &336038065
 GameObject:
   m_ObjectHideFlags: 0

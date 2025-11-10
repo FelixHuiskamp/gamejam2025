@@ -7,7 +7,7 @@ public class FirstPersonCamera : MonoBehaviour
 
     [Header("Settings")]
     public float mouseSensitivity = 100f;
-    public bool lockCursor = true;
+    public bool lockCursor = false;
 
     private float xRotation = 0f;
 
